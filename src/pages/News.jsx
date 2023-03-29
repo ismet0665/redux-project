@@ -27,12 +27,12 @@ const News = () => {
       {/* <h1>NEWS</h1> */}
       {loading && (
         <Box display="flex" alignItems="center" justifyContent="center">
-          <img src={loadingGif} alt="loading"/>
+          <img src={loadingGif} alt="loading" />
         </Box>
       )}
 
       {error && (
-        <Typography variant="h2" color="error" textAlign="center" marginTop={2} >
+        <Typography variant="h2" color="error" textAlign="center" marginTop={2}>
           {error}
         </Typography>
       )}
