@@ -25,7 +25,9 @@ export const getNews = createAsyncThunk(
       return data.articles; //veri datanın içindeki articles ın içinde oldugu için return nü bu şekilde yazdık.
     } catch (error) {
       console.log(error);
-      return rejectWithValue("Something went wrong"); // rejectWithValue props u ile hatayı yakalattırıyoruz. return ile aşagıdaki case e getNews.rejected, gönderiyoruz.
+      return rejectWithValue(
+        "Since the news api is used, we cannot publish it at the product stage. You can run it locally."
+      ); // rejectWithValue props u ile hatayı yakalattırıyoruz. return ile aşagıdaki case e getNews.rejected, gönderiyoruz.
     }
   }
 );
